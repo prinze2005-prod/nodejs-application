@@ -23,7 +23,7 @@ app.get('/acadalearning', function(request, response) {
     //response.send("<h2><center>Welcome to Node JS app develpoed by ACADA</h2>");
     response.write("<h2><center><u>Node JS  Application </u></center></h2>");
 	
-    response.write("<h2><center>Welcome to  ACADA Learning. Please Contact +15875742233 for more information or send an email to info@acadalearning.com <center></h2>" );
+    response.write("<h2><center>Welcome to  Eze's Devops School. Please Contact +14038503350 for more information or send an email to prinze2005@yahoo.ca <center></h2>" );
     response.end();
     
   })
