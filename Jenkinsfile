@@ -7,11 +7,11 @@ pipeline {
       }
     }
 
-    stage('docker-build') {
+    stage('build') {
       steps {
-        sh 'docker rm -f nodeapp'
-        sh 'docker build -t nodeapp .'
-        sh 'docker tag nodeapp prinze2005/nodeapp'
+        sh '''docker rm -f prinze2005/nodeapp 
+docker build -t nodeapp .
+docker tag nodeapp prinze2005/nodeapp '''
       }
     }
 
