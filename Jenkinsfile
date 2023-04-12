@@ -7,7 +7,7 @@ pipeline {
       }
     }
 
-    stage('') {
+    stage('docker-build') {
       steps {
         sh 'docker rm -f nodeapp'
         sh 'docker build -t nodeapp .'
