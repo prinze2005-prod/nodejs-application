@@ -15,5 +15,15 @@ docker tag nodeapp prinze2005/nodeapp '''
       }
     }
 
+    stage('docker login') {
+      environment {
+        DOCKERHUB_USER = 'prinze2005'
+        DOCKERHUB_PASSWORD = 'Uchechi@01'
+      }
+      steps {
+        sh 'docker login -u $DOCKERHUB_USER -p $DOCKERHUB_PASSWORD'
+      }
+    }
+
   }
 }
