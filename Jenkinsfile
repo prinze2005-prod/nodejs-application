@@ -27,7 +27,7 @@ docker tag nodeapp prinze2005/nodeapp '''
 
     stage('docker push') {
       steps {
-        sh 'docker push prinze2005/nodapp'
+        sh 'docker push prinze2005/nodapp:latest'
       }
     }
 
